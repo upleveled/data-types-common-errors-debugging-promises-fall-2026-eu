@@ -57,7 +57,8 @@ const newTeamMembers = [
 
 console.log(newTeamMembers.map((teamMember) => teamMember.name));
 
-// Update the name of the second team member (mutation version)
+// Update the name of the second team member (mutation version with index)
+// WARNING: this will possibly fail if array is different order
 teamMembers[1].name = 'Karl';
 
 console.log(teamMembers.map((teamMember) => teamMember.name));
